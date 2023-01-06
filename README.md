@@ -31,6 +31,7 @@ Backend에 대해 알고 싶었고
 기본 환경구현
 
 ### 2주차
+database(MySQL) 연동
 
 ### 3주차
 
