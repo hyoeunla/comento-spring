@@ -34,6 +34,13 @@ Backend에 대해 알고 싶었고
 database(MySQL) 연동
 
 ### 3주차
+crud 페이지(게시판) 구현
+
+<img width="883" alt="스크린샷 2023-01-19 오후 9 55 18" src="https://user-images.githubusercontent.com/96915074/213448317-40728338-a74a-4f3c-9938-8f0af739d241.png">
+
+<img width="599" alt="스크린샷 2023-01-19 오후 9 56 05" src="https://user-images.githubusercontent.com/96915074/213448414-3af68d10-31a9-4039-b3c8-0e0fe65bd7f7.png">
+
+<img width="489" alt="스크린샷 2023-01-19 오후 9 56 38" src="https://user-images.githubusercontent.com/96915074/213448528-f5336c59-1405-4da8-b105-1b7ee73c8cf5.png">
 
 ### 4주차
 
