@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mappers.BoardMapper">
+ 
+	<insert id="create">
+		<!-- Oracle -->
+		<!-- 
+		insert into table_board (no, title, content, writer, password, regDate)
+		values(board_seq.nextval, #{title}, #{content}, #{writer}, #{password}, SYSDATE)
+		 -->
+		
+		<!-- MySQL -->
+		insert into study_db (title, content, writer, password)
+		values(#{title}, #{content}, #{writer}, #{password})
+	</insert>
+	
+	<select id="read" resultType="com.comento.project.board.BoardVO">
+		select no, title, content, writer, password, regDate, hit
+		from study_db
+		where no = #{no}
+	</select>
+	
+	<update id="updateHits">
+		update study_db set hit = hit + 1
+		where no = #{no}
+	</update>
+	
+	<update id="update">
+		update study_db set title = #{title}, content = #{content}
+		where no = #{no}
+	</update>
+	
+	<delete id="delete">
+		delete from study_db where no = #{no}
+	</delete>
+	
+	<select id="listAll" resultType="com.comento.project.board.BoardVO">
+	<![CDATA[
+		select no, title, content, writer, password, regDate, hit
+		from study_db
+		where no > 0
+		order by no desc, regDate desc
+	]]>
+	</select>
+ </mapper>

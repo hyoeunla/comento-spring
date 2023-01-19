@@ -1,4 +1,4 @@
-package com.comento_study.study;
+package com.comento.project;
 
 import java.text.DateFormat;
 import java.util.Date;
